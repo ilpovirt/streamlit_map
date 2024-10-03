@@ -10,7 +10,7 @@ df = pd.read_csv(url)
 st.write("Keskinopeus on :", df['Speed (m/s)'].mean(),'m/s' )
 
 #draw line plot
-st.line_chart(df, x = 'Time (s)', y = 'Speed (m/s)', y_label = 'Speed',x_label = 'Time')
+st.line_chart(df, x = 'Time (s)', y = 'Distance (km)', y_label = 'Distance',x_label = 'Time')
 
 #Create a map where the center is at start_lat start_long and zoom level is defined
 start_lat = df['Latitude (°)'].mean()
