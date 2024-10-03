@@ -7,7 +7,7 @@ url = "https://raw.githubusercontent.com/ilpovirt/streamlit_map/main/GPSdata.csv
 df = pd.read_csv(url)
 
 #Arvojen tulostaminen
-st.write("Keskinopeus:", df['Speed (m/s)'],'m/s' )
+st.write("Keskinopeus:", df['Speed (m/s)'].mean(),'m/s' )
 
 #draw line plot
 st.line_chart(df, x = 'Time (s)', y = 'Speed (m/s)', y_label = 'Speed',x_label = 'Time')
