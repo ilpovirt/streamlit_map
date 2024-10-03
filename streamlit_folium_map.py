@@ -3,8 +3,7 @@ import pandas as pd
 import folium 
 from streamlit_folium import st_folium
 
-#url = "https://raw.githubusercontent.com/ilpovirt/streamlit_map/main/GPSdata.csv"
-url = "GPSdata.csv"
+url = "https://raw.githubusercontent.com/ilpovirt/streamlit_map/main/GPSdata.csv"
 df = pd.read_csv(url)
 
 #Create a map where the center is at start_lat start_long and zoom level is defined
